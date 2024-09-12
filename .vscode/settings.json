@@ -15,4 +15,5 @@
    "files.autoSave": "off",
    "workbench.colorTheme": "Solarized Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
+   "liveServer.settings.port": 5501,
 }

@@ -18,12 +18,21 @@
         <form>
             <label for="user-value">Enter a number...</label>
             <br><br>
-            <input type="number" min="15" max="200" name="user-value">
+            <input type="number" min="15" max="200" name="user-value" id="userValue">
             <br><br>
-            <button for="user-value">GO!</button>
+            <button type="button" onclick="updateOutput()">GO!</button>
         </form>
     </div>
 
+    <!-- Displays Fizzbuzz game result (mobile) -->
+    <div class="output-div">
+        <p id="output"></p>
+    </div>
+
+    <!-- footer with creation info -->
+    <footer>
+        <p>Created by Isaac Dearman</p>
+    </footer>
 
     <!-- Link to scripts.js file -->
     <script src="scripts.js"></script>
