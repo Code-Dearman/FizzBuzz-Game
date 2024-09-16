@@ -1,4 +1,4 @@
-function updateOutput() {                                               /*defines the function updateOutput which is called but the GO! button in FizzBuzzgame.html*/
+function updateOutput() {                                               /*defines the function updateOutput which is called by the GO! button in FizzBuzzgame.html*/
     
     var i;                                                              /*Creates the variable i which denotes the integer in the FizzBuzz game*/
     var userInput = document.getElementById("userValue").value;         /*Creates the variable of userInput which takes the value from the userInput element in FizzBuzzgame.html*/
@@ -9,11 +9,11 @@ function updateOutput() {                                               /*define
         if (i % 5 === 0) output += "Buzz";                              /*if the remainder of i / 5 is exactly equal to 0 add the string "Buzz" to the variable output*/
         if (output === "") output += i;                                 /*if neither of the previous rules apply add the current value of i to the output*/
 
-        document.getElementById("output").textContent += output + " ";    /*Targets the html element with the id of "output" and adds the output variable + a blank space string to the inner html*/
+        document.getElementById("output").textContent += output + " ";    /*Targets the html element with the id of "output" and adds the output variable + a blank space string to the text content*/
     }
 
 }
 
-function clearOutput() {
-    document.getElementById("output").textContent = "";
+function clearOutput() {                                                /*defines function clearOutput which is called by the reset button in FizzBuzzgame.html*/
+    document.getElementById("output").textContent = "";                 /*targets the textContent of the P element which has the id"output" and changes it to "" or blank*/
 }
