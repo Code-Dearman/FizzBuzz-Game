@@ -22,17 +22,21 @@
     </header>
 
     <!-- First Section for user input (mobile) -->
-    <div>
+    <article>
         <form>
-            <label for="user-value">Enter a number...</label>
-            <br><br>
-            <input type="number" min="15" max="200" name="user-value" id="userValue">
-            <br><br>
+
+            <div id="valueDiv">
+                <label for="user-value">Enter a number...</label>
+                <br><br>
+                <input type="number" min="15" max="200" name="user-value" id="userValue">
+                <br><br>
+            </div>
+
             <button type="button" onclick="updateOutput()">GO!</button>
 
             <button type="button" onclick="clearOutput()">Reset</button>
         </form>
-    </div>
+    </article>
 
     <!-- Displays Fizzbuzz game result (mobile) -->
     <div class="output-div">

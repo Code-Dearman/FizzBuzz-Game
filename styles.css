@@ -18,3 +18,7 @@ nav > ul {
     justify-content: space-evenly;
     font-size: 2rem;
 }
+
+#valueDiv {
+   display: block;
+}

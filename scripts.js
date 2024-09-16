@@ -9,11 +9,13 @@ function updateOutput() {                                               /*define
         if (i % 5 === 0) output += "Buzz";                              /*if the remainder of i / 5 is exactly equal to 0 add the string "Buzz" to the variable output*/
         if (output === "") output += i;                                 /*if neither of the previous rules apply add the current value of i to the output*/
 
-        document.getElementById("output").textContent += output + " ";    /*Targets the html element with the id of "output" and adds the output variable + a blank space string to the text content*/
+        document.getElementById("output").textContent += output + " ";  /*Targets the html element with the id of "output" and adds the output variable + a blank space string to the text content*/
+        document.getElementById("valueDiv").style.display="none"        /*Hides the user input box*/
     }
 
 }
 
-function clearOutput() {                                                /*defines function clearOutput which is called by the reset button in FizzBuzzgame.html*/
-    document.getElementById("output").textContent = "";                 /*targets the textContent of the P element which has the id"output" and changes it to "" or blank*/
+function clearOutput() {                                                /*Defines function clearOutput which is called by the reset button in FizzBuzzgame.html*/
+    document.getElementById("output").textContent = "";                 /*Targets the textContent of the P element which has the id"output" and changes it to "" or blank*/
+    document.getElementById("valueDiv").style.display="block"           /*Brings back the user input box*/
 }
