@@ -19,3 +19,4 @@ function clearOutput() {                                                /*Define
     document.getElementById("output").textContent = "";                 /*Targets the textContent of the P element which has the id"output" and changes it to "" or blank*/
     document.getElementById("valueDiv").style.display="block"           /*Brings back the user input box*/
 }
+
