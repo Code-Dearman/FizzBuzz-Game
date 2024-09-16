@@ -13,3 +13,7 @@ function updateOutput() {                                               /*define
     }
 
 }
+
+function clearOutput() {
+    document.getElementById("output").textContent = "";
+}
