@@ -3,16 +3,38 @@ body {
     font-family:'Courier New', Courier, monospace;
     text-align: center;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #2563eb;
+}
+
+.light-font-primary {
+    color: #1f2937;
+}
+
+.light-font-secondary {
+    color: #6b7280;
+}
+
+.dark-font-primary {
+    color: #ffffff;
+}
+
+.dark-font-secondary {
+    color: #9ca3af;
 }
 
 /* -----------------------------------------------------Nav Styles */
+nav {
+    background-color: #1e40af;
+}
+
 .nav-link {
     text-decoration: none;
-    color: black;
 }
 
 .nav-link:hover {
-    color: #030303;
+    color: #9ca3af;
 }
 
 nav > ul {
@@ -22,6 +44,11 @@ nav > ul {
     font-size: 2rem;
     padding: 0;
     margin: 0;
+}
+
+/* -----------------------------------------------------Main Content Styles */
+.main-content {
+    color: #1f2937;
 }
 
 /* -----------------------------------------------------Input Area Styles */

@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FizzBuzzGame</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
 
     <!--Nav bar (static) User navigation to and from About.html  -->
     <nav>
         <ul>
-            <li><a href="FizzBuzz Game.html" class="nav-link">Home</a></li>
-            <li><a href="About.html" class="nav-link">About</a></li>
+            <li><a href="FizzBuzz Game.html" class="nav-link dark-font-primary">Home</a></li>
+            <li><a href="About.html" class="nav-link dark-font-primary">About</a></li>
         </ul>
     </nav>
 
     <!-- Header (static) -->
     <header>
-        <h1>Lets play Fizzbuzz!</h1>
+        <h1 class="dark-font-primary">Lets play Fizzbuzz!</h1>
     </header>
 
     <!-- First Section for user input (mobile) -->
-    <section>
-        <form>
+    <main class="main-content">
+        <section>
+            <form>
 
-            <div id="valueDiv">
-                <label for="user-value">Enter a number...</label>
-                <br><br>
-                <input type="number" min="15" max="200" name="user-value" id="userValue">
-                <br><br>
-            </div>
+                <div id="valueDiv">
+                    <label for="user-value" class="dark-font-primary">Enter a number...</label>
+                    <br><br>
+                    <input type="number" min="15" max="200" name="user-value" id="userValue">
+                    <br><br>
+                </div>
 
-            <button type="button" onclick="updateOutput()">GO!</button>
+                <button type="button" onclick="updateOutput()">GO!</button>
 
-            <button type="button" onclick="clearOutput()">Reset</button>
-        </form>
-    </section>
+                <button type="button" onclick="clearOutput()">Reset</button>
+            </form>
+        </section>
+    </main>
 
     <!-- Displays Fizzbuzz game result (mobile) -->
     <div class="output-div">
@@ -51,4 +55,5 @@
     <!-- Link to scripts.js file -->
     <script src="scripts.js"></script>
 </body>
+
 </html>
