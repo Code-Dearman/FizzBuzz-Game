@@ -91,6 +91,11 @@ h1 {
     width: 50%;
 }
 
+.timeReport {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
 /* -----------------------------------------------------Button Styles */
 .btn {
     border-radius: 8px;
