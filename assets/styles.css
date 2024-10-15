@@ -88,3 +88,11 @@ h1 {
     margin: 50px 25% 0 25%;
     width: 50%;
 }
+
+/* -----------------------------------------------------Button Styles */
+.btn {
+    border-radius: 2px;
+    width: 5rem;
+    height: 3rem;
+    font-size: 1rem;
+}
