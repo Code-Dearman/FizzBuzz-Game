@@ -91,8 +91,18 @@ h1 {
 
 /* -----------------------------------------------------Button Styles */
 .btn {
-    border-radius: 2px;
+    border-radius: 8px;
     width: 5rem;
     height: 3rem;
     font-size: 1rem;
+    margin: 1.5rem 1rem 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.5) -2px 2px 2px;
+}
+
+.btn--go {
+    background-color: #28A745;
+}
+
+.btn--reset {
+    background-color: #FFC107;
 }
