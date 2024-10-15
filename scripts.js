@@ -1,3 +1,6 @@
+
+
+
 function updateOutput() {                                                                       /*defines the function updateOutput which is called by the GO! button in FizzBuzzgame.html*/
     
     var i;                                                                                      /*Creates the variable i which denotes the integer in the FizzBuzz game*/
@@ -16,6 +19,7 @@ function updateOutput() {                                                       
 
         document.getElementById("output").textContent += output + " ";                          /*Targets the html element with the id of "output" and adds the output variable + a blank space string to the text content*/
         document.getElementById("valueDiv").style.display="none"                                /*Hides the user input box*/
+        document.getElementById("goButton").style.display="none"
     }
 
 }
@@ -23,5 +27,6 @@ function updateOutput() {                                                       
 function clearOutput() {                                                                        /*Defines function clearOutput which is called by the reset button in FizzBuzzgame.html*/
     document.getElementById("output").textContent = "";                                         /*Targets the textContent of the P element which has the id"output" and changes it to "" or blank*/
     document.getElementById("valueDiv").style.display="block"                                   /*Brings back the user input box*/
+    document.getElementById("goButton").style.display="inline-block"
 }
 
