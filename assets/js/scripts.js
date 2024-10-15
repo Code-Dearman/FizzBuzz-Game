@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("userValue").focus();
+
+    document.getElementById("userValue").addEventListener("keydown", function(event) {
+        if (event.key === "Enter"){
+            updateOutput();
+        }
+    })
+
 })
 
 
