@@ -8,7 +8,7 @@ body {
     background-color: #374151;
 }
 
-/* Primar */
+/* Primary */
 
 /* Font Colours */
 .light-font-primary {
@@ -79,7 +79,7 @@ h1 {
 }
 
 .output-div p {
-    border: 1px solid black;
+    border: 1px solid #1e40af;
     border-radius: 2px;
     margin: 50px 25% 0 25%;
     width: 50%;
