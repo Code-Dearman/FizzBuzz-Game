@@ -17,7 +17,7 @@ if ((i % 3 != 0) && (i % 5 != 0)) {
 }
 ```
 
-Can quite quickly be broken down into its working components and explained. 
+Can quickly be broken down into its working components and explained. 
 
 Please check out my website at: [FizzBuzz Game](https://code-dearman.github.io/FizzBuzz-Game/)
 
