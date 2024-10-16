@@ -67,6 +67,8 @@ const displayAnchor = () => {                                                   
     newAnchor.setAttribute('href', "calculator.html");                                          /*sets attributes for the new anchor tag, namely the href value which points toa  new webapge*/
     newAnchor.innerText = "Bored? Try this";                                                    /*sets the inner text of the anchor tag*/
     newAnchor.classList.add("newAnchor");                                                       /*Adds a class to the new anchor tag so that I can target it in other areas of scripts.js*/
+    newAnchor.style.color ="#ffffff";
+    newAnchor.style.textDecoration = "red wavy underline"
 
     timeDiv.appendChild(newAnchor);                                                             /*Finally, adds the new anchor tag with all of its attributes to the timeDiv when the function is called*/
 }
