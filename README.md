@@ -4,12 +4,22 @@
 
 FizzBuzz Game is a website I created with the goal of practising my JavaScript skills. The premise is simple. I wanted to create a site where you could input a number and the code would count up from 1 to *your number* while following these rules.
 
-1. If the division of the number by 3 leaves no remainder. Say Fizz!
-2. If the division of the number by 5 leaves no remainder. Say Buzz!
-3. If the division of the number by both 3 and 5 leaves no remainder. Say FizzBuzz!
+1. If the number is a multiple of 3. Say Fizz!
+2. If the number is a multiple of 5. Say Buzz!
+3. If the number is a multiple of 3 and 5. Say FizzBuzz!
 4. Otherwise, just say the number.
 
-[FizzBuzz Game](https://code-dearman.github.io/FizzBuzz-Game/)
+Fizzbuzz is often used as an early introduction to coding which teaches the learner about writing loops, conditionals, and modulo operations. I first heard about it from the videomaker [Tom Scott](https://www.youtube.com/watch?v=QPZ0pIK_wsc) who used the game as the basis for one of his videos. Watching this not only made me want to try his method out for myself but it also made me realise that what at first looks complicated, for example: 
+
+```
+if ((i % 3 != 0) && (i % 5 != 0)) {
+    console.log(i)
+}
+```
+
+Can quite quickly be broken down into its working components and explained. 
+
+Please check out my website at: [FizzBuzz Game](https://code-dearman.github.io/FizzBuzz-Game/)
 
 ## Features to add:
 - ~~Press enter to submit number.~~
