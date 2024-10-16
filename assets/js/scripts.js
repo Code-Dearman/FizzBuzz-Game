@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 })
 
+let gameCounter = 0;                                                                            /*Creates a varioable which will count the number of times that the fizzbuzz game has been played.*/
 
 function updateOutput() {                                                                       /*defines the function updateOutput which is called by the GO! button in FizzBuzzgame.html*/
     
@@ -34,17 +35,22 @@ function updateOutput() {                                                       
         document.getElementById("goButton").style.display="none"
     }
 
+    gameCounter++;                                                                              /*increments the game counter*/
+
     let timeTaken = performance.now() - start;                                                  /*Takes a times stamp at the end of the function and minuses the original time to find how long the function took to run.*/
     const timeReport = `That function took ${timeTaken} milliseconds to run!`;                  /*Writes a template literal which reports the time taken to run the function and applies it to a constant*/
     document.getElementById("timeReport").innerText = timeReport;                               /*applies the timeReport to the timeStamp paragraph*/
-
+    
 }
 
 function clearOutput() {                                                                        /*Defines function clearOutput which is called by the reset button in FizzBuzzgame.html*/
     document.getElementById("output").textContent = "";                                         /*Targets the textContent of the P element which has the id"output" and changes it to "" or blank*/
     document.getElementById("valueDiv").style.display="block";                                  /*Brings back the user input box*/
     document.getElementById("goButton").style.display="inline-block";                           /*Brings back the goButton*/
-    document.getElementById("timeReport").innerText = "";
+    document.getElementById("timeReport").innerText = "";                                       /*Clears the time report paragraph*/  
+}
+
+if (gameCounter >= 3) {
     
 }
 
