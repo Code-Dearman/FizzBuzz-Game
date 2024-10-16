@@ -36,9 +36,9 @@ function updateOutput() {                                                       
     }
 
     gameCounter++;                                                                              /*increments the game counter*/
-    let timeDiv = document.querySelector(".time-div");
-    let newAnchor = document.querySelector(".newAnchor")
-    if (gameCounter >= 3 && !timeDiv.contains(newAnchor)) {
+    let timeDiv = document.querySelector(".time-div");                                          /*declares a new variable which selects the time-div element */
+    let newAnchor = document.querySelector(".newAnchor")                                        /*declares a new variable which targets the newAnchor (see displayAnchor function below)*/
+    if (gameCounter >= 3 && !timeDiv.contains(newAnchor)) {                                     /*if statement that checks whether theres is already an anchor tag and whether the gameCounter increment is high enough. If both statements are true a new anchor tag is inserted*/
         displayAnchor();
     }
 
@@ -65,10 +65,10 @@ const displayAnchor = () => {                                                   
     let newAnchor = document.createElement("a");                                                /*delcares a variable which holds the value of a new anchor tag*/
     
     newAnchor.setAttribute('href', "calculator.html");                                          /*sets attributes for the new anchor tag, namely the href value which points toa  new webapge*/
-    newAnchor.innerText = "Bored? Try this";                                                    /**/
-    newAnchor.classList.add("newAnchor");
+    newAnchor.innerText = "Bored? Try this";                                                    /*sets the inner text of the anchor tag*/
+    newAnchor.classList.add("newAnchor");                                                       /*Adds a class to the new anchor tag so that I can target it in other areas of scripts.js*/
 
-    timeDiv.appendChild(newAnchor);
+    timeDiv.appendChild(newAnchor);                                                             /*Finally, adds the new anchor tag with all of its attributes to the timeDiv when the function is called*/
 }
 
 
