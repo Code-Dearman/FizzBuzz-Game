@@ -36,11 +36,16 @@ function updateOutput() {                                                       
     }
 
     gameCounter++;                                                                              /*increments the game counter*/
+    let timeDiv = document.querySelector(".time-div");
+    let newAnchor = document.querySelector(".newAnchor")
+    if (gameCounter >= 3 && !timeDiv.contains(newAnchor)) {
+        displayAnchor();
+    }
 
     let timeTaken = performance.now() - start;                                                  /*Takes a times stamp at the end of the function and minuses the original time to find how long the function took to run.*/
     const timeReport = `That function took ${timeTaken} milliseconds to run!`;                  /*Writes a template literal which reports the time taken to run the function and applies it to a constant*/
     document.getElementById("timeReport").innerText = timeReport;                               /*applies the timeReport to the timeStamp paragraph*/
-    
+    return gameCounter;
 }
 
 function clearOutput() {                                                                        /*Defines function clearOutput which is called by the reset button in FizzBuzzgame.html*/
@@ -50,7 +55,17 @@ function clearOutput() {                                                        
     document.getElementById("timeReport").innerText = "";                                       /*Clears the time report paragraph*/  
 }
 
-if (gameCounter >= 3) {
+
+
+const displayAnchor = () => {
+    let timeDiv = document.querySelector(".time-div");
+    let newAnchor = document.createElement("a");
     
+    newAnchor.setAttribute('href', "calculator.html");
+    newAnchor.innerText = "Bored? Try this";
+    newAnchor.classList.add("newAnchor");
+
+    timeDiv.appendChild(newAnchor);
 }
+
 
