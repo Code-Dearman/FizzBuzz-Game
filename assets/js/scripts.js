@@ -53,16 +53,19 @@ function clearOutput() {                                                        
     document.getElementById("valueDiv").style.display="block";                                  /*Brings back the user input box*/
     document.getElementById("goButton").style.display="inline-block";                           /*Brings back the goButton*/
     document.getElementById("timeReport").innerText = "";                                       /*Clears the time report paragraph*/  
+    document.getElementById("userValue").value = "";                                            /*Clears the userValue input box*/
+
+    document.getElementById("userValue").focus();                                               /*Refocusses the input box on reset so that no clicking in necessary*/
 }
 
 
 
-const displayAnchor = () => {
-    let timeDiv = document.querySelector(".time-div");
-    let newAnchor = document.createElement("a");
+const displayAnchor = () => {                                                                   /*defines a function which will display an anchor tag after three tries of the FizzBuzz game*/
+    let timeDiv = document.querySelector(".time-div");                                          /*declares a variable which holds the value of the timeDiv in index.html*/
+    let newAnchor = document.createElement("a");                                                /*delcares a variable which holds the value of a new anchor tag*/
     
-    newAnchor.setAttribute('href', "calculator.html");
-    newAnchor.innerText = "Bored? Try this";
+    newAnchor.setAttribute('href', "calculator.html");                                          /*sets attributes for the new anchor tag, namely the href value which points toa  new webapge*/
+    newAnchor.innerText = "Bored? Try this";                                                    /**/
     newAnchor.classList.add("newAnchor");
 
     timeDiv.appendChild(newAnchor);
