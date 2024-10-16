@@ -80,7 +80,7 @@ h1 {
 
 /* -----------------------------------------------------Output Area Styles */
 .output-div {
-    height: 500px;
+    height: 400px;
     overflow-y: auto;
 }
 
