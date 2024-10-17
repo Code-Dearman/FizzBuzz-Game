@@ -5,13 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByClassName("calcButton");
     /**Adds and event listener to each calcButton and passes its value into the addToInput function.*/
     for (let button of buttons) {
-
-        console.log(button.value);
-
+        
         button.addEventListener("click", function(event) {
             addToInput(event.target.value);
-
-            
         }); 
     }
 
@@ -20,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     /**Adds and event listener to calcButtonDelete to run the deleteOne function on click */
     document.querySelector(".calcButtonDelete").addEventListener("click", deleteOne);
+
+    document.querySelector(".calcButtonEquals")
 
 })
 
