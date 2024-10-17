@@ -38,6 +38,9 @@ const clearInput = () => document.getElementById("inputArea").value = "";
 /**Deletes the last character from the input area*/
 const deleteOne = () => {
     let inputArea = document.getElementById("inputArea").value;
-    document.getElementById("inputArea").value = inputArea.slice(0, -1);
+
+    inputArea = inputArea.slice(0, -1);
+
+    // document.getElementById("inputArea").value = inputArea.slice(0, -1);
 
 }
