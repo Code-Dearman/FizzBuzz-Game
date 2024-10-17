@@ -143,6 +143,26 @@ h1 {
     height: 3rem;
 }
 
+.calcButtonClear {
+    background-color: #ffaba9;
+    border-color: #ffaba9;
+}
+
+.calcButtonClear:hover {
+    background-color: #ce8988;
+    border-color: #ce8988;
+}
+
+.calcButtonDelete {
+    background-color: #aaaafe;
+    border-color: #aaaafe;
+}
+
+.calcButtonDelete:hover {
+    background-color: #9999e4;
+    border-color: #9999e4;
+}
+
 .calcButton {
     width: 3rem;
     height: 3rem;
@@ -161,6 +181,6 @@ h1 {
     justify-content: center;
     background-color: black;
     width: 14.5rem;
-    height: 20.2rem;
+    height: 20.8rem;
     border-radius: 5px;
 }
