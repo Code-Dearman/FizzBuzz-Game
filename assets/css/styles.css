@@ -122,3 +122,45 @@ h1 {
 .btn--reset {
     background-color: #FFC107;
 }
+
+
+/* -----------------------------------------------------Calculator Styles */
+
+.calcBody {
+    margin: 0;
+    padding: 0;
+}
+
+.calcOutput {
+    width: 13.2rem;
+    height: 3rem;
+    text-align: right;
+    font-size: 2.5rem;
+}
+
+.calcButtonLarge {
+    width: 6.6rem;
+    height: 3rem;
+}
+
+.calcButton {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+.calcMainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    width: 14.5rem;
+    height: 20.2rem;
+    border-radius: 5px;
+}
