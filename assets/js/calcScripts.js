@@ -39,8 +39,5 @@ const clearInput = () => document.getElementById("inputArea").value = "";
 const deleteOne = () => {
     let inputArea = document.getElementById("inputArea").value;
 
-    inputArea = inputArea.slice(0, -1);
-
-    // document.getElementById("inputArea").value = inputArea.slice(0, -1);
-
+    document.getElementById("inputArea").value = inputArea.slice(0, -1);
 }
