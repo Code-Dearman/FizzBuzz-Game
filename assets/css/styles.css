@@ -146,16 +146,19 @@ h1 {
 .calcButtonClear {
     background-color: #ffaba9;
     border-color: #ffaba9;
+    border-radius: 2px;
 }
 
 .calcButtonClear:hover {
     background-color: #ce8988;
     border-color: #ce8988;
+    border-radius: 2px;
 }
 
 .calcButtonDelete {
     background-color: #aaaafe;
     border-color: #aaaafe;
+    border-radius: 2px;
 }
 
 .calcButtonDelete:hover {
@@ -167,12 +170,16 @@ h1 {
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
+    border-radius: 2px;
 }
 
 .calcButtonEquals {
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
+    background-color: #AEFF6E;
+    border-color: #AEFF6E;
+    border-radius: 2px;
 }
 
 .calcMainContainer {
