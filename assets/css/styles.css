@@ -138,6 +138,15 @@ h1 {
     font-size: 2.5rem;
 }
 
+.calcOutput:focus {
+    outline: none;
+}
+
+.calcOutput:disabled {
+    background-color: #e9e9ed;
+    color: black;
+}
+
 .calcButtonLarge {
     width: 6.6rem;
     height: 3rem;
