@@ -31,12 +31,12 @@ const addToInput = (targetValue) => {
     const inputArea =  document.getElementById("inputArea");
 
     inputArea.value += targetValue;
-    console.log(inputArea.value);
-
 }
+
 
 /**Clears the input area. */
 const clearInput = () => document.getElementById("inputArea").value = "";
+
 
 /**Deletes the last character from the input area*/
 const deleteOne = () => {
