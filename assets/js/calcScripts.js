@@ -7,16 +7,20 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         
         button.addEventListener("click", function(event) {
+            /**On clicking the specified buttons, runs the function addToInput and passes
+             * a paramater which is the value (as specified in calculator.html) of the button.
+             */
             addToInput(event.target.value);
         }); 
     }
 
-    /**Adds and event listener to calcButtonClear to run the clearInput function on click */
+    /**Adds and event listener to calcButtonClear to run the clearInput function on click*/
     document.querySelector(".calcButtonClear").addEventListener("click", clearInput);
 
-    /**Adds and event listener to calcButtonDelete to run the deleteOne function on click */
+    /**Adds and event listener to calcButtonDelete to run the deleteOne function on click*/
     document.querySelector(".calcButtonDelete").addEventListener("click", deleteOne);
 
+    /**Adds "click" event listener to the equals button which runs the calculateInput function*/
     document.querySelector(".calcButtonEquals").addEventListener("click", calculateInput);
 
 })
