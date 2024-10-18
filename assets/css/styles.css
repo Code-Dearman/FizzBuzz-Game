@@ -169,6 +169,12 @@ h1 {
     font-size: 1.5rem;
 }
 
+.calcButtonEquals {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
 .calcMainContainer {
     display: flex;
     align-items: center;

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     /**Adds and event listener to calcButtonDelete to run the deleteOne function on click */
     document.querySelector(".calcButtonDelete").addEventListener("click", deleteOne);
 
-    document.querySelector(".calcButtonEquals")
+    document.querySelector(".calcButtonEquals").addEventListener("click", calculateInput);
 
 })
 
@@ -27,6 +27,7 @@ const addToInput = (targetValue) => {
     const inputArea =  document.getElementById("inputArea");
 
     inputArea.value += targetValue;
+    console.log(inputArea.value);
 
 }
 
@@ -39,3 +40,13 @@ const deleteOne = () => {
 
     document.getElementById("inputArea").value = inputArea.slice(0, -1);
 }
+
+
+/**uses the eval() method to calculate the result of a string */
+const calculateInput = () => {
+    const inputArea = document.getElementById("inputArea");
+
+    inputArea.value =  eval(inputArea.value);
+}
+
+
