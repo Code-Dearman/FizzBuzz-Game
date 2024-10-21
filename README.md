@@ -25,7 +25,7 @@ Please check out my website at: [FizzBuzz Game](https://code-dearman.github.io/F
 
 ![Game play image](assets/images/readme%20images/gameplay.png)
 
-I think 'game' might be a misnomer for the way that this feature works but that's what I'm sticking with.
+I think 'game' might be a misnomer but that's what I'm sticking with.
 
 The user is presented with this feature as soon as they reach index.html. They are invited to enter a number and press the 'Go!' button. Pressing this button causes the JavaScript program to count up for one to the desired number, replacing all the appropriate numbers with either Fizz, Buzz or Fizz Buzz.
 
