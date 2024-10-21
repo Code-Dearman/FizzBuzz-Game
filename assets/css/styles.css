@@ -208,3 +208,23 @@ h1 {
     height: 20.8rem;
     border-radius: 5px;
 }
+
+/* -----------------------------------------------------Footer Styles */
+.footerAnchor {
+    font-size: 25px;
+    margin: 25px;
+    color: #e9e9ed;
+}
+
+.footerAnchor:hover {
+    color: #6b7280;
+}
+
+@media screen and (min-width: 600) {
+    i.navIcon {
+        display: none;
+    }
+
+    
+}
+
