@@ -22,7 +22,11 @@ function updateOutput() {                                                       
     if (userInput > 20000) {                                                                    /*Sets an upper limit of 10,000 so that the user cannot input large numbers and cause performance issues.*/
         document.getElementById("output").textContent += "Error: Please don't break me";        /*Displays an error message if the user does try to input a large number.*/
         return;                                                                                 /*Ends the script early*/
-    }                                                
+    }     
+    
+    if (userInput === "") {
+        return;
+    }
     
     for (i = 1; i <= userInput; i++) {                                                          /*Changes i value to 1 and states, where i is less than or equal to the userInput value, add 1 to i*/
         let output = "";                                                                        /*defines a new variable, output, which is a blank string for now*/
