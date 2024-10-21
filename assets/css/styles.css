@@ -220,11 +220,12 @@ h1 {
     color: #6b7280;
 }
 
-@media screen and (min-width: 600) {
-    i.navIcon {
+@media screen and (max-width: 600px) {
+    .navIcon {
         display: none;
     }
-
-    
+    h1 {
+        color: yellow;
+    }
 }
 
