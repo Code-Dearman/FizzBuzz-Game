@@ -210,6 +210,10 @@ h1 {
 }
 
 /* -----------------------------------------------------Footer Styles */
+footer {
+    margin-top: 25px;
+}
+
 .footerAnchor {
     font-size: 25px;
     margin: 25px;
