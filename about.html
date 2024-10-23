@@ -26,8 +26,10 @@
 
     <nav>
         <ul>
-            <li><a href="index.html" class="nav-link dark-font-primary"><i class="fa-solid fa-house navIcon"></i>Home</a></li>
-            <li><a href="about.html" class="nav-link dark-font-primary"><i class="fa-solid fa-circle-info navIcon"></i>About</a></li>
+            <li><a href="index.html" class="nav-link dark-font-primary"><i
+                        class="fa-solid fa-house navIcon"></i>Home</a></li>
+            <li><a href="about.html" class="nav-link dark-font-primary"><i
+                        class="fa-solid fa-circle-info navIcon"></i>About</a></li>
         </ul>
     </nav>
 
@@ -36,11 +38,37 @@
         <hr class="hr-divider">
     </header>
 
-    <main>
-        <p>Fizz Buzz is a simple and popular coding challenge often used to teach basic programming concepts like loops,
+    <main class="aboutMain dark-font-primary">
+        <p class="fizzBuzzInfo">Fizz Buzz is a simple and popular coding challenge often used to teach basic programming
+            concepts like loops,
             conditionals, and modulo operations. The task is to write a program that iterates through a sequence of
             numbers, typically from 1 to 100, and prints a specific output based on certain conditions:
         </p>
+
+        <ol>
+            <li>If the number is a multiple of 3. Say Fizz!</li>
+            <li>If the number is a multiple of 5. Say Buzz!</li>
+            <li>If the number is a multiple of 3 and 5. Say FizzBuzz!</li>
+            <li>Otherwise, just say the number.</li>
+        </ol>
+
+        <p class="fizzBuzzInfo">Lets ask chatGPT to write us a FizzBuzz program in JavaScript and see what we get.</p>
+
+        <code class="fizzBuzzCode">for (let i = 1; i <= 100; i++) { <br>
+                if (i % 3 === 0 && i % 5 === 0) {
+                console.log("FizzBuzz");
+                <br>
+                } else if (i % 3 === 0) {
+                console.log("Fizz");
+                <br>
+                } else if (i % 5 === 0) {
+                console.log("Buzz");
+                <br>
+                } else {
+                console.log(i);
+                }
+                <br>
+                }</code>
     </main>
 
 </body>

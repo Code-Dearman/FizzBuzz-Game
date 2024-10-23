@@ -209,6 +209,29 @@ h1 {
     border-radius: 5px;
 }
 
+/* -----------------------------------------------------About Styles */
+.aboutMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fizzBuzzInfo {
+    width: 50%;
+    line-height: 25px;
+}
+
+.aboutMain ol {
+    list-style: none;
+    line-height: 25px;
+}
+
+.fizzBuzzCode{
+    text-align: left;
+    line-height: 25px;
+}
+
 /* -----------------------------------------------------Footer Styles */
 footer {
     margin-top: 25px;
